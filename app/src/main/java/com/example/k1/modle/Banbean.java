@@ -63,5 +63,22 @@ public class Banbean {
         public void setHtmlurl(String htmlurl) {
             this.htmlurl = htmlurl;
         }
+
+        @Override
+        public String toString() {
+            return "BannerlistBean{" +
+                    "imageurl='" + imageurl + '\'' +
+                    ", htmlurl='" + htmlurl + '\'' +
+                    '}';
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Banbean{" +
+                "message='" + message + '\'' +
+                ", code='" + code + '\'' +
+                ", bannerlist=" + bannerlist +
+                '}';
     }
 }

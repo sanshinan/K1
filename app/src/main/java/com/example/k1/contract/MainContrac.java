@@ -4,12 +4,13 @@ import com.example.k1.base.BaseView;
 import com.example.k1.modle.Banbean;
 import com.example.k1.util.INetCallBack;
 
-public class MainContract {
+public interface MainContrac {
 
-    interface  IMainModel{
+    interface IMainModdel {
         //Banner
         <T> void getLoginBab(String url, INetCallBack<T> callBack);
     }
+
 
     interface IMainPersenter{
         void  loginBan(String url);
@@ -18,4 +19,6 @@ public class MainContract {
     interface IMainView extends BaseView{
         void getBan(Banbean banbean);
     }
+
+
 }
